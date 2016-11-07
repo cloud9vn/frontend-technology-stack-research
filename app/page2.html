@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Trainning</title>
+    <link type="text/css" rel="stylesheet" href="../bower_components/normalize-css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="inner">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">○○○○取引先名 </a></li>
+                    <li><a href="#">○○○○部署名 </a></li>
+                    <li class="congestion"><a href="#">混雑 太郎 様 </a></li>
+                    <li class="log-out"><a href="#">ログアウト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="top-wrap">
+    <section class="block-step container">
+        <div class="list-group inner">
+            <a href="index.html" class="list-group-item active "><span>Step 1</span><span>商品種別・集計エリアの指定 </span></a>
+            <a href="page2.html" class="list-group-item "><span>Step 2</span><span>集計条件の設定 </span></a>
+            <a href="#" class="list-group-item item-3"><span>Step 3</span><span>集計項目の確認  </span></a>
+            <a href="#" class="list-group-item"><span>Step 4</span><span>使用目的の確認 </span></a>
+        </div>
+    </section>
+    <div class="page-content container">
+        
+        <section class="block-wrap">
+            <div class="block-title">
+                <h3 class="inner">商品種別を選択してください</h3></div>
+            <div class="block-content">
+                <div class="inner">
+                    <div class="method">
+                        <div class="method-title">
+                            <span >手順①</span>
+                            エリア選択方法
+                        </div>
+                        <div class="method-content">
+                           <div class="btn">YYYY/MM/DD</div>
+                           <span>~</span>
+                           <div class="btn">YYYY/MM/DD</div>
+                           <div class="btn add-time">期間追加</div>
+                        </div>
+                        </div>
+                    <div class="method">    
+                    <div class="method-title">
+                        <span >手順②</span>
+                             滞在時間の指定  
+                    </div>
+                    <div class="method-content">
+                           <input class="btn btn-2" placeholder="15"/>
+                           <span>分</span>
+                           <span>~</span>
+                           <input class="btn btn-2" placeholder="指定な"/>
+                           <span>分</span>
+                           <span><a href="#">※変更すると以降の設定がリセットされます</a></span>
+                        </div>
+                </div>
+                <div class="method">
+                        <div class="method-title ">
+                            <span >手順③</span>
+                             集計項目の指定
+                        </div>
+                        <div class="method-content">
+                          <div class="table-responsive">
+                          <table class="table table-bordered table-custom">
+                             <tbody>
+                                <tr class="alt">
+                                    <td class="radio-wrap" style="width: 18.5%;">
+                                        <input type="checkbox" id="radio-11"/>
+                                        <label for="radio-11">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="radio-wrap">
+                                        <input type="checkbox" id="radio-12"/>
+                                        <label for="radio-12">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="radio-wrap">
+                                        <input type="checkbox" id="radio-13"/>
+                                        <label for="radio-13">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="radio-wrap">
+                                        <input type="checkbox" id="radio-14"/>
+                                        <label for="radio-14">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="radio-wrap">
+                                        <input type="checkbox" id="radio-15"/>
+                                        <label for="radio-15">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="radio-wrap">
+                                        <input type="checkbox" id="radio-16"/>
+                                        <label for="radio-16">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="radio-wrap">
+                                        <input type="checkbox" id="radio-17"/>
+                                        <label for="radio-17">足立区</label>
+                                    </td>
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                             </tbody>
+                          </table>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="method last">    
+                    <div class="method-title">
+                        <span>手順④ </span>
+                             詳細設定  
+                    </div>
+                    <div class="method-content">
+                        <div class="table-responsive">
+                         <table class="table table-bordered table-custom">
+                             <tbody>
+                                <tr class="alt alt-1">
+                                    <td>
+                                        <span>人数</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-21"/>
+                                        <label for="radio-21">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-22"/>
+                                        <label for="radio-22">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-23"/>
+                                        <label for="radio-23">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-24"/>
+                                        <label for="radio-24">足立区</label>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr class="alt alt-1">
+                                    <td>
+                                        <span>人数</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox"  id="radio-31"/>
+                                        <label for="radio-31">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox"  id="radio-32"/>
+                                        <label for="radio-32">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox"  id="radio-33"/>
+                                        <label for="radio-33">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox"  id="radio-34"/>
+                                        <label for="radio-34">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-35"/>
+                                        <label for="radio-35">足立区</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="alt alt-1">
+                                    <td>
+                                        <span>居住者・勤務者の集計対象設定</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox"  id="radio-41"/>
+                                        <label for="radio-41">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-42"/>
+                                        <label for="radio-42">足立区</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="alt alt-1">
+                                    <td>
+                                        <span><a href="javascript:;" class="collapse-header" data-number="1">年まとめ</a></span>
+                                        <a href="#">※複数年の同月をひとつの月として合算する場合は、「合算する」を選択してください。 </a>
+                                    </td>
+                                </tr>
+                                <tr class="collapse-content" data-number="1" style="display: none;">
+                                    <td>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-51"/>
+                                            <label for="radio-51">足立区</label>
+                                        </div>
+                                        <div class="radio-wrap">
+                                        <input type="checkbox" id="radio-52"/>
+                                            <label for="radio-52">足立区</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="alt alt-1">
+                                    <td>
+                                        <span><a href="javascript:;" class="collapse-header" data-number="2">クロス集計軸の追加</a></span>
+                                    </td>
+                                </tr>
+                                <tr class="collapse-content" data-number="2" style="display: none;">
+                                    <td>
+                                        <div class="inner-table clearfix">
+                                            <div class="area-col col-1">
+                                                <ul>
+                                                    <li class="checkbox-wrap">
+                                                        <input type="checkbox" id="check-11">
+                                                        <label for="check-11">東京都全て </label>
+                                                    </li>
+                                                    <li class="checkbox-wrap">
+                                                        <input type="checkbox" id="check-12">
+                                                        <label for="check-12">足立区</label>
+                                                    </li>
+                                                    <li class="checkbox-wrap">
+                                                        <input type="checkbox" id="check-13">
+                                                        <label for="check-13">足立区</label>
+                                                    </li>
+                                                    <li class="checkbox-wrap">
+                                                        <input type="checkbox" id="check-14">
+                                                        <label for="check-14">足立区</label>
+                                                    </li>
+                                                    <li class="checkbox-wrap">
+                                                        <input type="checkbox" id="check-15">
+                                                        <label for="check-15">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="area-col col-1">
+                                                <ul>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-61">
+                                                        <label for="radio-61">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-62">
+                                                        <label for="radio-62">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-63">
+                                                        <label for="radio-63">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-64">
+                                                        <label for="radio-64">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-65">
+                                                        <label for="radio-65">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="area-col col-2">
+                                                <ul>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-71">
+                                                        <label for="radio-71">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-72">
+                                                        <label for="radio-72">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-73">
+                                                        <label for="radio-73">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-74">
+                                                        <label for="radio-74">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-75">
+                                                        <label for="radio-75">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="area-col">
+                                                <ul>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-81">
+                                                        <label for="radio-81">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-82">
+                                                        <label for="radio-82">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-83">
+                                                        <label for="radio-83">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-84">
+                                                        <label for="radio-84">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="area-col">
+                                                <ul>
+                                                    <li class="checkbox-wrap">&nbsp;</li>
+                                                    <li class="checkbox-wrap">&nbsp;</li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-91">
+                                                        <label for="radio-91">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox"id="radio-92">
+                                                        <label for="radio-92">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="area-col">
+                                                <ul>
+                                                    <li class="checkbox-wrap">&nbsp;</li>
+                                                    <li class="checkbox-wrap">&nbsp;</li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-93">
+                                                        <label for="radio-93">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-94">
+                                                        <label for="radio-94">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="area-col">
+                                                <ul>
+                                                    <li class="checkbox-wrap">&nbsp;</li>
+                                                    <li class="checkbox-wrap">&nbsp;</li>
+                                                   <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-95">
+                                                        <label for="radio-95">足立区</label>
+                                                    </li>
+                                                    <li class="radio-wrap">
+                                                        <input type="checkbox" id="radio-96">
+                                                        <label for="radio-96">足立区</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                             </tbody>
+                          </table> 
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="container">
+    <div class="output">
+    <div class="output-title">▼上記設定での出力サンプル▼  </div>
+    <div class="table-responsive output-table">
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>出発地</th>
+        <th>平休日</th>
+        <th>のべ推定人数 </th>
+        <th>推定ＵＵ </th>
+        <th>のべ実数 </th>
+        <th>期間名</th>
+        <th>ＵＵ実数</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2013/1/1～2015/12/31 </td>
+        <td>平日</td>
+        <td>神奈川県茅ケ崎市</td>
+        <td>450</td>
+        <td>345</td>
+        <td>242</td>
+        <td>210</td>
+      </tr>
+      </tbody>
+  </table>
+  </div>
+ </div>
+ </div>
+<section class="next-tab container">
+    <a class="btn btn-normal">次へ </a>
+</section>
+<footer class="container">
+    <div class="inner"></div>
+</footer>
+</body>
+</html>

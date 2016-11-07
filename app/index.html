@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html lang="ja">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Trainning</title>
+	<link type="text/css" rel="stylesheet" href="../bower_components/normalize-css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../app/styles/main.css">
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+    	<div class="inner">
+	        <nav class="top-nav">
+	            <ul>
+	                <li><a href="#">○○○○取引先名 </a></li>
+	                <li><a href="#">○○○○部署名 </a></li>
+	                <li class="congestion"><a href="#">混雑 太郎 様 </a></li>
+                    <li class="log-out"><a href="#">ログアウト</a></li>
+	            </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="top-wrap">
+    <section class="block-step container">
+        <div class="list-group inner">
+            <a href="index.html" class="list-group-item active "><span>Step 1</span><span>商品種別・集計エリアの指定 </span></a>
+            <a href="page2.html" class="list-group-item "><span>Step 2</span><span>集計条件の設定 </span></a>
+            <a href="#" class="list-group-item item-3"><span>Step 3</span><span>集計項目の確認  </span></a>
+            <a href="#" class="list-group-item"><span>Step 4</span><span>使用目的の確認 </span></a>
+        </div>
+    </section>
+    <div class="page-content container">
+        <section class="block-wrap block-wrap-select">
+            <div class="block-title">
+                <h3 class="inner">商品種別を選択してください</h3></div>
+            <div class="block-content clearfix">
+                <div class="inner">
+                    <select class="visitor-data">
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                        <option>来訪者データ（対象エリア流入者の人数や居住地などを把握できる商圏分析用データ</option>
+                    </select>
+                    <span><a href="#">※変更すると以降の設定がリセットされます</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-wrap">
+            <div class="block-title">
+                <h3 class="inner">商品種別を選択してください</h3></div>
+            <div class="block-content">
+                <div class="inner">
+                    <div class="method">
+                        <div class="method-title">
+                            <span >手順①</span>
+                            エリア選択方法
+                        </div>
+                        <div class="rule">
+                           <a class="btn active">都道府県/市区町村単位で指定 </a>
+                           <a class="btn">都道府県/市区町村単位で指定 </a>
+                           <a class="btn">都道府県/市区町村単位で指定 </a>
+                        </div>
+                    </div>
+               <div class="method area">
+                        <div class="method-title">
+                            <span >手順②</span>
+                             対象エリア 
+                        </div>
+                        <h4>都道府県または市区町村にチェックを入れて、集計したいエリアを選んでください（複数選択可能） </h4>
+                
+                <div class="tab-view">
+                    <ul class="nav nav-tabs">
+                        <li>北海道・東北 </li>
+                        <li class="active" >関東 </li>
+                        <li>東海 </li>
+                        <li>・・ ・  </li>
+                    </ul>
+                <div class="tab-content clearfix">
+                    
+                    <div class="area-col">
+                        <a href="#" class="btn-a active">東京都 </a>
+                        <ul>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-11"/>
+                                <label for="check-11">東京都全て </label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-12"/>
+                                <label for="check-12">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-13"/>
+                                <label for="check-13">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-14"/>
+                                <label for="check-14">足立区</label>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="area-col">
+                        <a href="#" class="btn-a">神奈川県 </a>
+                        <ul>
+                            <li class="checkbox-wrap">&nbsp;</li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-21"/>
+                                <label for="check-21">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-22"/>
+                                <label for="check-22">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-23"/>
+                                <label for="check-23">・・ ・</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-col">
+                        <a href="#" class="btn-a">埼玉県</a>
+                        <ul>
+                            <li class="checkbox-wrap">&nbsp;</li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-31"/>
+                                <label for="check-31">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-32"/>
+                                <label for="check-32">足立区</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-col">
+                        <a href="#" class="btn-a">千葉県 </a>
+                        <ul>
+                            <li class="checkbox-wrap">&nbsp;</li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-41"/>
+                                <label for="check-41">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-42"/>
+                                <label for="check-42">足立区</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-col">
+                        <a href="#" class="btn-a">群馬県 </a>
+                        <ul>
+                            <li class="checkbox-wrap">&nbsp;</li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-51"/>
+                                <label for="check-51">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-52"/>
+                                <label for="check-52">足立区</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-col">
+                        <a href="#" class="btn-a">茨城県 </a>
+                        <ul>
+                            <li class="checkbox-wrap">&nbsp;</li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-61"/>
+                                <label for="check-61">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-62"/>
+                                <label for="check-62">足立区</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="area-col">
+                        <a href="#" class="btn-a">栃木県 </a>
+                        <ul>
+                            <li class="checkbox-wrap">&nbsp;</li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-71"/>
+                                <label for="check-71">足立区</label>
+                            </li>
+                            <li class="checkbox-wrap">
+                                <input type="checkbox" id="check-72"/>
+                                <label for="check-72">足立区</label>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <section class="next-tab container">
+        <a class="btn btn-normal">次へ </a>
+    </section>
+<footer>
+    <div class="container"></div>
+</footer>
+</body>
+</html>

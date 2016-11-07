@@ -1,0 +1,24 @@
+{
+  "name": "https-github.com-cloud9vn-frontend-technology-stack-research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-uncss": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuyen-dtt/https-github.com-cloud9vn-frontend-technology-stack-research.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuyen-dtt/https-github.com-cloud9vn-frontend-technology-stack-research/issues"
+  },
+  "homepage": "https://github.com/tuyen-dtt/https-github.com-cloud9vn-frontend-technology-stack-research#readme"
+}
