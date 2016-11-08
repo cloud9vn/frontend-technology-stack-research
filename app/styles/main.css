@@ -174,10 +174,9 @@ header {
           padding-left: 41px;
           color: #007dbf; }
       .block-wrap .block-content .method .method-content .btn {
-        font-size: 14px;
         font-weight: normal;
         color: #555;
-        width: 16.1%;
+        width: 163px;
         background: #fff;
         border: 1px solid #cbcbcb;
         margin-right: 2%;
@@ -185,12 +184,12 @@ header {
         line-height: 42px;
         padding: 0; }
       .block-wrap .block-content .method .method-content .btn-2 {
-        width: 8.8%;
+        width: 89px;
         color: #aaa; }
       .block-wrap .block-content .method .method-content span {
         margin-right: 2%; }
       .block-wrap .block-content .method .method-content .add-time {
-        width: 18.3%;
+        width: 185px;
         color: #fff;
         background-color: #007dbf;
         font-size: 17px;
@@ -569,7 +568,14 @@ footer {
     padding-left: 5px; }
     .block-wrap .tab-content .area-col .checkbox-wrap label {
       font-size: 13px;
-      padding-left: 0; } }
+      padding-left: 0; }
+
+  .table-custom tr.alt-1 .collapse-header:before {
+    margin-left: -32px; }
+
+  .method .method-content span a {
+    display: block;
+    margin: 10px 0; } }
 @media (max-width: 767px) {
   .container {
     width: 100%; }
@@ -587,9 +593,9 @@ footer {
   .block-wrap .block-content .visitor-data {
     width: 100%; }
 
-  	/* .block-wrap .block-content span a {
-     display: block;
-     margin-bottom: 28px; } */
+  .block-wrap .block-content .method .method-content .btn {
+    margin: 2%; }
+
   .block-wrap .block-content .method .rule .btn:last-child {
     margin-right: 24px; }
 

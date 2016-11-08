@@ -1,24 +1,30 @@
 {
-  "name": "https-github.com-cloud9vn-frontend-technology-stack-research",
+  "name": "frontend-technology-stack-research",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^1.0.1",
-    "grunt-uncss": "^0.6.1"
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-uncss": "^0.6.1",
+    "y": "^0.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^1.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tuyen-dtt/https-github.com-cloud9vn-frontend-technology-stack-research.git"
+    "url": "git+https://github.com/cloud9vn/frontend-technology-stack-research.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tuyen-dtt/https-github.com-cloud9vn-frontend-technology-stack-research/issues"
+    "url": "https://github.com/cloud9vn/frontend-technology-stack-research/issues"
   },
-  "homepage": "https://github.com/tuyen-dtt/https-github.com-cloud9vn-frontend-technology-stack-research#readme"
+  "homepage": "https://github.com/cloud9vn/frontend-technology-stack-research#readme"
 }

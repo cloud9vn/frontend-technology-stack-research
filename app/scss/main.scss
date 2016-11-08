@@ -235,10 +235,9 @@ header{
 	} 
 	.method-content{
 		.btn{
-		font-size: 14px;
 		font-weight:normal;
 		color: #555;
-		width:16.1%;
+		width:163px;
 		background:$white;
 		border: 1px solid #cbcbcb;
 		margin-right: 2%;
@@ -247,14 +246,14 @@ header{
 		padding:0
 		}
 		.btn-2{
-		width:8.8%;
+		width:89px;
 		color: #aaa;
 		}
 		span{
 			margin-right: 2%;
 		}
 		.add-time{
-			width:18.3%;
+			width:185px;
 			color: $white;
 			background-color:$blue;
 			font-size: 17px;
@@ -731,7 +730,8 @@ footer{
 		    	width: 20%;
     	}
     }
-    .block-wrap .block-content .method .rule .btn{
+	
+	.block-wrap .block-content .method .rule .btn{
     	
     	padding: 0 10px;
     	width: inherit;
@@ -752,6 +752,14 @@ footer{
     		padding-left: 0;
     	}
     }
+//page2
+    .table-custom tr.alt-1 .collapse-header:before{
+    	margin-left: -32px;
+    }
+    .method .method-content span a {
+   		display: block;
+   		margin: 10px 0;
+   	}
 }
 
 
@@ -775,10 +783,10 @@ footer{
 
 	.block-wrap .block-content .visitor-data{
     width:100%;}
-
-	/* .block-wrap .block-content span a {
-   display: block;
-   margin-bottom: 28px; } */
+	
+	.block-wrap .block-content .method .method-content .btn{
+		margin:2%;
+	}
 
 	.block-wrap .block-content .method .rule .btn:last-child{
 		margin-right: 24px;
