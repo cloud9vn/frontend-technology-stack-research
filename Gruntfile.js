@@ -1,9 +1,7 @@
 module.exports = function (grunt) {
 	
 	 // Load the Grunt plugins.
-    require('matchdep')
-        .filterDev('grunt-*')
-        .forEach(grunt.loadNpmTasks);
+	//require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'), 
@@ -12,8 +10,8 @@ module.exports = function (grunt) {
                 options: {
                     banner: '/* LicenseMgr Minified css file */'
                 }, files: {
-                    'minify/styles/main.min.css': [
-                    'minify/styles/custom.css'
+                    'app/styles/main.min.css': [
+                    'app/styles/main.css'
                     ]
                     
                 }
@@ -27,19 +25,21 @@ module.exports = function (grunt) {
             },
             'ng-app-min': {
                 files: {
-                    'minify/scripts/main.min.js': [
+                    'app/scripts/main.min.js': [
                      'app/scripts/main.js'
                     ]
                     
                 }
             }
         }, 
+		
 		 uncss: {
-            dist: {
-                src: ['app/index.html'],
-                dest: 'minify/styles/custom.css',
-            }
-        },
+		  dist: {
+			files: {
+			   "app/styles/main.min.css": ['app/*.html']
+			}
+		  }
+		},
 		
 		jshint: {
 			all: [
@@ -55,12 +55,30 @@ module.exports = function (grunt) {
 			src: ['app/styles/main.css']
 			}
 		},
+		
+		imagemin: {
+		  dist: {
+			options: {
+			  optimizationLevel: 5
+			},
+			files: [{
+				expand: true,
+				cwd: "app/images",
+				src: ["**/*.{png,jpg,gif}"],
+				dest: 'app/images/minify'
+			}]
+		  }
+		},
     });
 	
-	//grunt.loadNpmTasks('grunt-contrib-cssmin');
-	//grunt.loadNpmTasks('grunt-contrib-uglify');
-	//grunt.loadNpmTasks('grunt-uncss');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-uncss');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-csslint');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	
 	
     // Register the default tasks.
-    grunt.registerTask('default', ['uglify','csslint','uncss', 'cssmin', 'jshint']);
+    grunt.registerTask('default', ['uglify','csslint', 'cssmin', 'uncss', 'jshint', 'imagemin']);
 };
