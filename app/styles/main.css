@@ -99,7 +99,7 @@ header {
       content: " ";
       position: absolute;
       top: -3px;
-      background: url("../images/sprite.png") no-repeat;
+      background: url("../images/minify/sprite.png") no-repeat;
       z-index: 5; }
     .top-wrap .list-group .list-group-item:before {
       left: -26px;
@@ -481,7 +481,7 @@ header {
   background: #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #fff url("../images/narrow.png") no-repeat top right; }
+  background: #fff url("../images/minify/narrow.png") no-repeat top right; }
 
 .output {
   background-color: #fff; }
