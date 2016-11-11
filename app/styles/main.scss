@@ -3,6 +3,8 @@ $blue:#007dbf;
 $white:#fff;
 $light-gray:#f2f2f2;
 $gray:#bbb;
+$lightest-gray:#e1e1e1;
+
 @font-face {
 	font-family: 'KozGoPro';
 	src: url('../fonts/KozGoPro-Bold-AlphaNum.eot');
@@ -31,6 +33,16 @@ $gray:#bbb;
 	font-weight: normal;
 }
 
+@mixin hover( $border, $background:$lightest-gray){
+	background-color: $background;
+	border: $border;
+}
+
+@mixin active( $border, $background:$blue){
+	background-color: $background;
+	border: $border;
+}
+
 body {
 	font-family: 'KozGoPro', sans-serif;
 	font-weight: normal;
@@ -51,10 +63,6 @@ a {
 
 ul li{
 	display:inline-block;
-}
-
-a:active{
-	color:$blue;
 }
 
 header{
@@ -120,12 +128,28 @@ header{
 			span{
 				z-index: 10;
 				}
-			&:hover, &.active{
-				z-index: 2;
-			    background-color: $blue;
-			    border: 3px solid $blue;
+			&.active, &:active{
+				@include active(3px solid $blue);
 			    span{
 			    	color: $white;
+			    }
+			    &:before{
+			    	background-position: 0 0;
+			    }
+			    &:after{
+			    	background-position: -241px 0;
+			    }
+			}
+			&:hover{
+				@include hover(3px solid $blue);
+			    span{
+			    	color: $blue;
+			    }
+			    &:before{
+			    	background-position: 0 -380px;;
+			    }
+			    &:after{
+			    	background-position: -241px -380px;
 			    }
 			}
 			&:before, &:after{
@@ -146,12 +170,7 @@ header{
 				right: -27px;
     			background-position: -241px -83px;
 			}
-			&.active:before, &:hover:before{
-				background-position: 0 0;
-			}
-			&.active:after, &:hover:after{
-				background-position: -241px 0;
-			}
+			
 			&:first-child:before, &:last-child:after{
 				display: none;
 			}
@@ -353,7 +372,7 @@ header{
 					    }
 					}
 					&.alt{
-						background: #e1e1e1;
+						background: $lightest-gray;
 						}
 					&.alt-1 {
 						span, .collapse-header{
@@ -479,14 +498,12 @@ header{
 			margin-right:0;
 			}
 		&.active, &:active{
-			background-color: $blue;
+			@include active(3px solid $blue);
 			color: $white;
-			border: #007dbf solid 3px;
 			box-shadow:none;
 		}
 		&:hover{
-			background:#e1e1e1;
-			border: 3px solid $gray;
+			@include hover(3px solid $gray);
 			color: $blue;
 		}
 		} 
@@ -514,13 +531,11 @@ header{
 		 	margin-right: 1.66%;
 		}
 		&.active, &:active{
-			background-color: $blue;
+			@include active(1px solid $blue);
 			color: $white;
-			border:$blue solid 1px;
 		}
 		&:hover{
-			background:#e1e1e1;
-			border: 1px solid $blue;
+			@include hover(1px solid $blue);
 			color: $blue;
 		}
 		}
@@ -546,21 +561,18 @@ header{
 		    .btn-a{
 		    	display: block;
 			    text-align: center;
-			    background: #e1e1e1;
+			    background: $lightest-gray;
 			    color: #555;
 			    border: 1px solid #a1a1a1;
 			    line-height: 42px;
 			    overflow: hidden;
 			    font-size: 16px;
 			    &.active, &:active{
+			    	@include active(1px solid $blue);
 					color: $white;
-					background-color:$blue;
-					border-color:$blue;
-					text-decoration: none;
 			    }
 			    &:hover{
-			    	background-color:$gray;
-			    	border-color:#959595;
+			    	@include hover(1px solid #959595,$gray);
 			    	text-decoration: none;
 			    }
 			    }
@@ -651,7 +663,7 @@ header{
 		}
 		.table-bordered{
 			thead>tr>th{
-			background-color:#e1e1e1;
+			background-color:$lightest-gray;
 			font-size: 16px;
 		    color: $blue;
 		    font-weight: 500;

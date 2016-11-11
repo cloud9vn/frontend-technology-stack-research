@@ -31,9 +31,6 @@ a {
 ul li {
   display: inline-block; }
 
-a:active {
-  color: #007dbf; }
-
 header {
   background-color: #b2d8ec;
   margin-bottom: 10px; }
@@ -86,12 +83,24 @@ header {
     font-size: 18px; }
     .top-wrap .list-group .list-group-item span {
       z-index: 10; }
-    .top-wrap .list-group .list-group-item:hover, .top-wrap .list-group .list-group-item.active {
-      z-index: 2;
+    .top-wrap .list-group .list-group-item.active, .top-wrap .list-group .list-group-item:active {
       background-color: #007dbf;
       border: 3px solid #007dbf; }
-      .top-wrap .list-group .list-group-item:hover span, .top-wrap .list-group .list-group-item.active span {
+      .top-wrap .list-group .list-group-item.active span, .top-wrap .list-group .list-group-item:active span {
         color: #fff; }
+      .top-wrap .list-group .list-group-item.active:before, .top-wrap .list-group .list-group-item:active:before {
+        background-position: 0 0; }
+      .top-wrap .list-group .list-group-item.active:after, .top-wrap .list-group .list-group-item:active:after {
+        background-position: -241px 0; }
+    .top-wrap .list-group .list-group-item:hover {
+      background-color: #e1e1e1;
+      border: 3px solid #007dbf; }
+      .top-wrap .list-group .list-group-item:hover span {
+        color: #007dbf; }
+      .top-wrap .list-group .list-group-item:hover:before {
+        background-position: 0 -380px; }
+      .top-wrap .list-group .list-group-item:hover:after {
+        background-position: -241px -380px; }
     .top-wrap .list-group .list-group-item:before, .top-wrap .list-group .list-group-item:after {
       width: 27px;
       height: 83px;
@@ -99,7 +108,7 @@ header {
       content: " ";
       position: absolute;
       top: -3px;
-      background: url("../images/minify/sprite.png") no-repeat;
+      background: url("../images/sprite.png") no-repeat;
       z-index: 5; }
     .top-wrap .list-group .list-group-item:before {
       left: -26px;
@@ -107,10 +116,6 @@ header {
     .top-wrap .list-group .list-group-item:after {
       right: -27px;
       background-position: -241px -83px; }
-    .top-wrap .list-group .list-group-item.active:before, .top-wrap .list-group .list-group-item:hover:before {
-      background-position: 0 0; }
-    .top-wrap .list-group .list-group-item.active:after, .top-wrap .list-group .list-group-item:hover:after {
-      background-position: -241px 0; }
     .top-wrap .list-group .list-group-item:first-child:before, .top-wrap .list-group .list-group-item:last-child:after {
       display: none; }
     .top-wrap .list-group .list-group-item:first-child {
@@ -361,11 +366,11 @@ header {
             margin-right: 0; }
           .block-wrap .block-content .method .rule .btn.active, .block-wrap .block-content .method .rule .btn:active {
             background-color: #007dbf;
+            border: 3px solid #007dbf;
             color: #fff;
-            border: #007dbf solid 3px;
             box-shadow: none; }
           .block-wrap .block-content .method .rule .btn:hover {
-            background: #e1e1e1;
+            background-color: #e1e1e1;
             border: 3px solid #bbb;
             color: #007dbf; }
   .block-wrap .nav-tabs {
@@ -388,10 +393,10 @@ header {
         margin-right: 1.66%; }
       .block-wrap .nav-tabs li.active, .block-wrap .nav-tabs li:active {
         background-color: #007dbf;
-        color: #fff;
-        border: #007dbf solid 1px; }
+        border: 1px solid #007dbf;
+        color: #fff; }
       .block-wrap .nav-tabs li:hover {
-        background: #e1e1e1;
+        background-color: #e1e1e1;
         border: 1px solid #007dbf;
         color: #007dbf; }
   .block-wrap .tab-content {
@@ -419,13 +424,12 @@ header {
         overflow: hidden;
         font-size: 16px; }
         .block-wrap .tab-content .area-col .btn-a.active, .block-wrap .tab-content .area-col .btn-a:active {
-          color: #fff;
           background-color: #007dbf;
-          border-color: #007dbf;
-          text-decoration: none; }
+          border: 1px solid #007dbf;
+          color: #fff; }
         .block-wrap .tab-content .area-col .btn-a:hover {
           background-color: #bbb;
-          border-color: #959595;
+          border: 1px solid #959595;
           text-decoration: none; }
       .block-wrap .tab-content .area-col .checkbox-wrap {
         padding-left: 20px;
@@ -481,7 +485,7 @@ header {
   background: #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #fff url("../images/minify/narrow.png") no-repeat top right; }
+  background: #fff url("../images/narrow.png") no-repeat top right; }
 
 .output {
   background-color: #fff; }
